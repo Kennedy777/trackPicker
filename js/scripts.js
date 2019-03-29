@@ -1,6 +1,36 @@
 $(document).ready(function() {
 
-  let isAdult = false;
+$('#quest1 #submit').click() {
+   $('.quizForm').hide();
+   $('#quest2').fadeIn(200);
+   return fals'e;
+  }
+
+$('#quest2 #submit').click() {
+  $('.quizForm').hide();
+  $('#quest3').fadeIn(300);
+  return false;
+  }
+
+$('#quest3 #submit').click() {
+  $('.quizForm').hide();
+   $('quest4').fadeIn(300);
+   return false;
+ }
+
+$('#quest4 #submit').click() {
+  $('.quizForm').hide();
+  $('#quest5').fadeIn(300);
+  return false;
+ }
+
+  $('#quest5 #submit').click() {
+    $('.quizForm').hide();
+    $('#result').fadein(200)
+  }
+});
+
+//  let isAdult = false;
   var favColor;
   $('#colorPick').change(function(){
     favColor = $('#colorPick').val();
@@ -22,7 +52,9 @@ $(document).ready(function() {
     }
     genderPath(gender, orientation);
     hobbyPath(favColor);
-  });
+
+
+
 
   function ageCheck(myAge) {
     if(myAge>=18) {
