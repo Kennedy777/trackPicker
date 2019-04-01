@@ -10,66 +10,110 @@
  </head>
     <body>
     <div class="container">
-      <header>
-        <div class="pull left">Which Progrmming Language is Best For You?</div>
-        </header>
-      <main>
-        <form class="quizForm" id="quest1" data-question="1">
-          <h3>Are you more interested in creating user-friendly and aesthetic designs, or creating the programming that makes a site work?</h3>
-             <ul>
-               <li><input type="radio" name="quest1" value="a"></li>
-               <li><input type="radio" name="quest1" value="b"></li>
-               <li><input type="radio" name="quest1" value="c"></li>
-               <li><input type="radio" name="quest1" value="d"></li>
-               </ul>
-             <button id="submit">Submit</button>
-        </form>
 
-        <form class="quizForm" id="quest2" data-question="2">
-          <h3>Second question?</h3>
-             <ul>
-               <li><input type="radio" name="quest2" value="a"></li>
-               <li><input type="radio" name="quest2" value="b"></li>
-               <li><input type="radio" name="quest2" value="c"></li>
-               <li><input type="radio" name="quest2" value="d"></li>
-              </ul>
-            <button id="submit">Submit</button>
-        </form>
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Which Programming Language is Right For You?</h1>
+        <p>Tell us a little bit about yourself, and we'll help you decide which Epicodus track works best for your goals and interests! </p>
+       </div>
+     </div>
+     
+    <form class="quizForm" id="quest1" data-question="1">
+        <h3>Are you more interested in design and the "user experience" side, or do you prefer back-end programming?</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="front">
+              <input type="radio" id="front" name="endType" value="front">
+              Front end: user interface and design
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="back">
+              <input type="radio" id="back" name="endType" value="back">
+              Back-end and server-side programming
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="both">
+              <input type="radio" id="mix" name="endType" value="mix">
+              I'm interested in both
+            </label>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+
+      <form class="quizForm" id="quest2" data-question="2">
+        <h3>Which Epicodus campus do you prefer?</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="sea">
+              <input type="radio" id="sea" name="location" value="Seattle">
+              Seattle
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="portland">
+              <input type="radio" id="pdx" name="location" value ="Portand">
+              Portland
+            </label>
+          </div>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
 
         <form class="quizForm" id="quest3" data-question="3">
-          <h3>Third question?</h3>
-             <ul>
-               <li><input type="radio" name="quest3" value="a"></li>
-               <li><input type="radio" name="quest3" value="b"></li>
-               <li><input type="radio" name="quest3" value="c">/li>
-               <li><input type="radio" name="quest3" value="d"></li>
-             </ul>
-             <button id="submit">Submit</button>
-        </form>
+        <h3>Which of the following interests you most?</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="internal">
+              <input type="radio" id="internal" name="progType" value="internal">
+              Making internal software for businesses
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="apps">
+              <input type="radio" id="apps" name="progType" value="apps">
+              Developping mobile apps for end users
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="">
+              <input type="radio" id="android" name="progType" value="android">
+              Making high-performance Android applications
+            </label>
+          </div>
+        </div>
+        <button id="submit">Submit</button>
+         </form>
 
-        <form class="quizForm" id="quest1" data-question="4">
-          <h3>Question 4?</h3>
-             <ul>
-               <li><input type="radio" name="quest4" value="a"></li>
-               <li><input type="radio" name="quest4" value="b"></li>
-               <li><input type="radio" name="quest4" value="c"></li>
-               <li><input type="radio" name="quest4" value="d"></li>
-               </ul>
-              <button id="submit">Submit</button>
-        </form>
+      <form class="quizForm" id="quest4" data-question="4">
+        <h3>Of the following, which kind of organization or company would suit you best?</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="small">
+              <input type="radio" id="small" name="bizType" value="small">
+              A small, nimble start-up that produces a variety of end-user apps.
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="govt">
+              <input type="radio" id="govt" name="bizType" value="govt">
+              A Federal government agency with a complex network of websites.
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label for="corp">
+              <input type="radio" id="corp" name="bizType" value="corp">
+              A large, established corporation (e.g., bank, big pharma, software....)
+            </label>
+          </div>
 
-        <form class="quizForm" id="quest1" data-question="5">
-          <h3>Question five?</h3>
-             <ul>
-               <li><input type="radio" name="quest5" value="a"</li>
-               <li><input type="radio" name="quest5" value="b"</li>
-               <li><input type="radio" name="quest5" value="c"</li>
-               <li><input type="radio" name="quest5" value="d"</li>
-               </ul>
-               <button id="submit">Submit</button>
-        </form>
-        </main>
-    </div
- </body>
-
- </html>
+          <input id = "submit" type="submit" name="submit" value="Click to find out which language is right for you you!">
+      </form>
+      </div>
+      <div class="result">
+      </div>
+    </div>
+  </body>
+</html>
+     
