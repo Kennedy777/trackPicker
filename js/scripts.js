@@ -3,7 +3,7 @@ $(document).ready(function() {
 $('#quest1 #submit').click() {
    $('.quizForm').hide();
    $('#quest2').fadeIn(200);
-   return fals'e;
+   return false;
   }
 
 $('#quest2 #submit').click() {
@@ -30,7 +30,7 @@ $('#quest4 #submit').click() {
   }
 });
 
-  $("#quiz").submit(function(event) {
+  $("#quizForm").submit(function(event) {
     event.preventDefault();
      
     var whichEnd = $('input[name=endType]:checked').val();
