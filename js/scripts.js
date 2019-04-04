@@ -17,10 +17,10 @@ $(document).ready(function(){
 
     if(company==="corp") {
       langRec = "Java or C# would be a good choice for you."
-    } else if (company===govt) {
+    } else if (company==="govt") {
       langRec="PHP or Java would be a great option."
     }
-  $("langRec").text(match);
+  $("langRec").text(langRec);
   $(".output").text();
     
   event.preventDefault();
