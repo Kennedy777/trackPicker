@@ -1,4 +1,3 @@
-
 .output {
   display: hide;
 }
@@ -13,10 +12,10 @@ label {
   margin-left: 15px;
 }
 
-}
 #submit {
   margin-left: 5%;
 }
+
 .container {
   background-color: #beead7;
 }
