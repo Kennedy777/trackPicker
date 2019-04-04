@@ -1,22 +1,28 @@
 $(document).ready(function(){
-  
-  $("form").submit(function(event)
-    var whichEnd = $('input[name=endType]:checked').val();
-    var where = $('input[name=location]:checked').val();
-    var langType = $('input[progType]:checked').val();
-    var company = $('input[bizType]:checked').val();
+  $("#selectionForm").submit(function(event){
+
+    var whichEnd = $('select#focus').val();
+    var where = $('select#campus').val();
+    var area = $('select#interest').val();
+    var company = $('select#org').val();
+    var priorities = $('select#values').val();
 
     if(whichEnd === "front") {
-      $(".result").text("Take the UX/UI and design track. Hope you're in Portland, Oregon!");
-    } else if (whichEnd === "back" || money === "mix") {
-      if(company === "corp") {
-        $(".result").text("C# or Java would be great for you!");
-      } else { 
-            $(".result").text("Ruby on Rails would be a great starting point!");
+      langRec="Take the UX/UI and design track. Hope you're in Portland, Oregon!");
+    } else if (whichEnd === "back" || "mix" && where ==="seattle") {
+        langRec="C# or Java would be great for you!");
+      } else {
+          langRec="Ruby on Rails would be a great starting point!");
         }
-      }
 
-    event.preventDefault();
+    if(company==="corp") {
+      langRec = "Java or C# would be a good choice for you."
+    } else if (company===govt) {
+      langRec="PHP or Java would be a great option."
+    }
+  $("langRec").text(match);
+  $(".output").text();
+    
+  event.preventDefault();
   });
 });
-
