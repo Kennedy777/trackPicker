@@ -1,61 +1,6 @@
 $(document).ready(function(){
-  $("form").submit(function(event){$('#quest1 #submit').click() {
-   $('.quizForm').hide();
-   $('#quest2').fadeIn(200);
-   return false;
-  }
-
-$('#quest2 #submit').click() {
-  $('.quizForm').hide();
-  $('#quest3').fadeIn(300);
-  return false;
-  }
-
-$('#quest3 #submit').click() {
-  $('.quizForm').hide();
-   $('quest4').fadeIn(300);
-   return false;
- }
-$('#quest4 #submit').click() {
-  $('.quizForm').hide();
-  $('#quest5').fadeIn(300);
-  return false;
- }
-
-  $('#quest5 #submit').click() {
-    $('.quizForm').hide();
-    $('#result').fadein(300)
-
-  }
-    
-    $('#quest1 #submit').click() {
-   $('.quizForm').hide();
-   $('#quest2').fadeIn(200);
-   return false;
-  }
-
-$('#quest2 #submit').click() {
-  $('.quizForm').hide();
-  $('#quest3').fadeIn(300);
-  return false;
-  }
-
-$('#quest3 #submit').click() {
-  $('.quizForm').hide();
-   $('quest4').fadeIn(300);
-   return false;
- }
-$('#quest4 #submit').click() {
-  $('.quizForm').hide();
-  $('#quest5').fadeIn(300);
-  return false;
- }
-
-  $('#quest5 #submit').click() {
-    $('.quizForm').hide();
-    $('#result').fadein(300)
-  }
-
+  
+  $("form").submit(function(event)
     var whichEnd = $('input[name=endType]:checked').val();
     var where = $('input[name=location]:checked').val();
     var langType = $('input[progType]:checked').val();
