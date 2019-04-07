@@ -17,73 +17,121 @@
        </div>
      </div>
      
- <form id="selectionForm">
+     <form id="selectionForm">
+
      <div class="form-group">
-      <label for="focusArea">Are you more interested in design and the "user experience" side, or do you prefer back-end programming?</label>
-        <select class="form-control" id="focus">
-        <option value="front">Front end: user interface and design</option>
-        <option value="back">Back-end and server-side programming</option>
-        <option value="mix">I'm interested in both</option>
-        </select> <br>
-          </div>
+      <label class="control-label"><b>Are you more interested in design and the "user experience" side, or do you prefer back-end programming?</b></label>
+      <div class="radio">
+        <label>
+        <input type="radio" name="focusArea" id="focus" value="front">
+        Front end: user interface and design
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input type="radio" name="focusArea" id="focus" value="back">
+          Back-end and server-side programming
+        </label>
+      <div class="radio">
+        <label>
+        <input type="radio" name="focusArea" id="focus" value="mix">
+        I'm interested in both</label>
+        <div>
+      </div><br>
 
-        <div class="form-group">
-        <label for="campus">Which Epicodus campus do you prefer?</label>
-        <select class="form-control" id="campus">
-          <option value="seatle">Seattle</option>
-          <option value="pdx">Portland</option>
-         <select><br>
-        </div>
+      <div class="form-group">
+        <label class="control-label"><b>Which Epicodus campus do you prefer?</b>
+        </label>
+      <div class="radio">
+        <label>
+        <input type="radio" name="location" id="where" value="seatle">Seattle</label>
+      </div>
+      <div class="radio">
+        <label>
+        <input type="radio" name="location" id="where" value="pdx">Portland</label>
+      </div><br>
+    </div>
 
-        <div class="form-group">
-        <label for="interest">Which of the following interests you most?</label>
-        <select class="form-control" id="interest">
-          <option value="internal">Making internal software for businesses</option>
-          <option value="apps">Developping mobile apps for end users</option>
-          <option value="apps">Making high-performance Android applications</option>
-         <select><br>
-        </div>
+      <div class="form-group">
+       <label class="control-label"><b>Which of the following interests you most?</b>
+       </label>
+      <div class="radio">
+        <label>
+        <input id="interest" type="radio" name="interest" value="internal">Making internal software for businesses
+       </label>
+      </div>
+     <div class="radio">
+        <label>
+        <input id="interest" type="radio" name="interest" value="apps"> Developping mobile apps for end users
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input id="interest" type="radio" name="interest" value="android"> Making high-performance Android applications
+        </label>
+      </div>
+      </div>><br>
+      <div class="form-group">
+       <label class="control-label"><b>Of the following, which kind of organization or company would suit you best?</b>
+       </label>
+       <div class="radio">
+         <label>
+         <input id="org" type="radio" name="bizType" value="startUp">A small, nimble start-up that produces a variety of end-user apps.
+        </label>
+       </div>
+       <div class="radio">
+         <label>
+         <input id="org" type="radio" name="bizType" value="govt">A Federal government agency or large NGO with a complex network of websites.
+        </label>
+      </div>
+       </div><br>
+     <div class="form-group">
+      <label class="control-label"><b>Which of the folliowing is most important to you?</b>
+      </label>
+      <div class="radio">
+        <label>
+        <input id="values" type="radio" name="whatIsImpt" value="security">
+        A secure job with a good salary.
+       </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input id="values" type="radio" name="whatIsImpt" value="salary">
+        A secure job with a good salary.
+       </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input id="values" type="radio" name="whatIsImpt" value="casual">
+        Being able to wear jeans to work.
+       </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input id="values" type="radio" name="whatIsImpt" value="foosball">
+        Playing foosball at work.
+       </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input id="values" type="radio" name="whatIsImpt" value="creativity">
+         reating cool apps that people will enjoy
+       </label>
+      </div>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
-        <div class="form-group">
-        <label for="bizType">Of the following, which kind of organization or company would suit you best?</label>
-        <select class="form-control" id="bizType>
-          <option value="internal">Making internal software for businesses</option>
-          <option value="apps">Developping mobile apps for end users</option>
-          <option value="apps">Making high-performance Android applications</option>
-         <select><br>
-        </div>
-
-        <div class="form-group">
-        <label for="orgType">Of the following, which kind of organization or company would suit you best?</label>
-        <select class="form-control" id="org">
-          <option value="startUp">A small, nimble start-up that produces a variety of end-user apps.</option>
-          <option value="govt">A Federal government agency or large NGO with a complex network of websites.</option>
-          <option value="apps">A large, established corporation (e.g., bank, big pharma, software....)</option>
-         <select><br>
-        </div>
-
-        <div class="form-group">
-        <label for="values">Which of the folliowing is most important to you?</label>
-        <select class="form-control" id="values">
-          <option value="security">A secure job with a good salary</option>
-          <option value="casual">Being able to wear jeans to work</option>
-          <option value="foosball">Playing foosball at work</option>
-          <option value="creativity">Creating cool apps that people will enjoy</option>
-         <select><br>
-        </div>
-
-        <button type="submit" class="btn">"Click to find out which language is right for you you!">
-      </form>
-
-    <div id=result>
+    <div id="result">
       <div class="output">
         <p> Based on your replies, we recommend that you study <strong><span id="langRec"></strong></span>. However, keep in mind that all languages are very similar, and you'll likely use a lot of different languages and frameworks in your development career. Have fun! </p>
       </div>
     </div>
-    
-    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       <script src="js/scripts.js"></script>
   </body>
-</html>
-
 </html>
      
