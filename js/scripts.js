@@ -11,16 +11,17 @@ $(document).ready(function(){
   if(whichEnd === "front") {
   $("#frontResult").show();
    }
-  if(whichEnd != "front" && company==="corp"){
+  else if(company==="corp"){
   $("#corJavaResult").show();
   }
- if (company !="startUp"){
- $("#rubyResult").fadeIn("slow");
+ else if (company==="startUp" || priorities==="foosball"){
+ $("#rubyResult").show();
  }
-  if(whichEnd != "front" && priorities==="foosball") {
+ else if(whichEnd != "front" && where==="pdx") {
   $("#rubyResult").show();
+   
    }else{
     $("#corJavaResult").show();
-   }
+   })
   });
 });
