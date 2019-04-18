@@ -11,13 +11,13 @@ $(document).ready(function() {
     //business logic//
     if (total <= 7) {
       $(".jumbotron").show();
-      $(".langCSS").show();
+      $(".langCSS").fadeIn();
       } else if (total > 8 && total <= 12) {
       $(".jumbotron").show();
-      $(".rubyResult").show();
+      $(".rubyResult").fadeIn();
       } else if (total > 13 && total <= 15) {
       $(".jumbotron").show();
-      $(".cResult").show();
+      $(".cResult").fadeIn();
       }
 
     });
