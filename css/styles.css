@@ -1,25 +1,20 @@
 body {
-  margin: 5%
-  padding: 20px;
+  /* margin: 2%;
+  padding: 50px;  */
   background-color: lightblue;
 }
 
 .jumbotron {
-  text-align: center;
-  background-color: lightgrey;
-  background-size: cover;
-  background-position: bottom;
-  color: black;
-}
-
-.container {
-margin: 10px;
-background-color: lightblue;
-}
-
-.result {
   display: none;
 }
+
+#survey {
+  margin: 5%;
+}
+/* .container {
+margin: 5%;
+background-color: lightblue;
+} */
 
 .langCSS {
   display: none;

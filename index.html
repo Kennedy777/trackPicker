@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="environments">
  <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">">
@@ -8,30 +8,21 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
-
    <title>Programming Track Choser</title>
    </head>
     <body>
-  
-    <div class="container">
-    <div class="jumbotron jumbotron-fluid">
-      <h1>Which Programming Language is Right For You?</h1>
-        <p>Tell us a little bit about yourself, and we'll help you decide which Epicodus track works best for your goals and interests! </p>
-       </div>
-     </div>
-     
-     <form id="selectionForm">
-      <div class="row">
-        <div class="col-md-6">
-          <form id="survey">
-            <h4>Choose the items in the drop-drop menus that most appeal to you to reveal your language track match!</h4><br>
-      
-             <div class="form-group">
-              <label for="fullname">Your Name</label>
-              <input type="text" class="form-control" id="fullname" placeholder="Tell us your name!">
-            </div>
 
-            <label for "bizType">Which of the following work environments do you prefer?</label>
+       <div class="container">
+          <div class="page-header">
+            <h1>Which Programming Language is Right For You?<br><small><em> Tell us a bit about yourself to find your perfect track!</em></small></h1>
+          </div>
+          
+          <div class="row">     
+          <div class="col-md-6">
+          <form id="survey">
+            <h4>Choose from the following:</h4><br>
+
+            <label for "company">Which of the following work environments do you prefer?</label>
             <select id="company" class="form-control">
               <option value="" selected disabled>Please select ...</option>
               <option value="1">Freelance</option>
@@ -41,7 +32,7 @@
             <br>
 
           <label for "interests">Which of the following interests you most??</label>
-            <select id="work" class="form-control">
+            <select id="interests" class="form-control">
               <option value="" selected disabled>Please select ...</option>
               <option value="1">I'm all about the design side</option>
               <option value="2">Creating fun apps for games</option>
@@ -50,7 +41,7 @@
             <br> 
 
             <label for "pet">Which would be your ideal pet?</label>
-            <select id="city" class="form-control">
+            <select id="pet" class="form-control">
               <option value="" selected disabled>Please select ...</option>
               <option value="1">Cat</option>
               <option value="2">Iguana</option>
@@ -59,7 +50,7 @@
             <br>
 
             <label for "cuisne">What is your favorite kind of cuisine?</label>
-            <select id="food" class="form-control">
+            <select id="cuisine" class="form-control">
               <option value="" selected disabled>Please select ...</option>
               <option value="1">Molecular gastronomy</option>
               <option value="2">Traditional French</option>
@@ -67,11 +58,11 @@
             </select>
             <br>
 
-            <label for "where">Where do you want to take a vacation?</label>
-            <select id="city" class="form-control">
+            <label for "where">Where would you like to study?</label>
+            <select id="where" class="form-control">
               <option value="" selected disabled>Please select ...</option>
-              <option value="1">Berlin</option>
-              <option value="2">Japan</option>
+              <option value="1">Online</option>
+              <option value="2">Portland</option>
               <option value="3">Seattle</option>
             </select>
             <br>
@@ -79,20 +70,22 @@
             <hr>
           </form>
         </div>
+
         <div class="col-md-6">
-            <div class="result">
+            <div class="jumbotron">
               <h2>Based on your replies, we recommend you study:</h2>
-              <p class="lang CSS"> CSS/Design</p>
+              <p class="langCSS"> CSS/Design</p>
               <img src="img/css.jpg" alt="image of front-end design" class="langCSS">
-              <p class="langRuby">Ruby/Rails</p>
+              <p class="rubyResult">Ruby/Rails</p>
               <img src="img/ruby.jpg" alt="Ruby on rails image" class="langRuby">
-              <p class="langCsharp">CSharp/.NET</p>
+              <p class="cResult">C Sharp</p>
               <img src="img/csharp.jpg" alt="c sharp logo image" class="langCsharp">
               <br>
-      </div>
+              <p class="link"><em>Want to try again? <a href=index.html>Click here</a> to retake the survey.</em><p>
+            </div>
+         </div>
     </div>
   </div>
-</div>
 </body>
 </html>
      
