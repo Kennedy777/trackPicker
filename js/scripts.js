@@ -18,7 +18,6 @@ $(document).ready(function() {
       } else if (total > 13 && total <= 15) {
       $(".jumbotron").show();
       $(".cResult").fadeIn();
-      }
-
-    });
+     }
+   });
 });
