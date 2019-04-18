@@ -4,9 +4,8 @@
   background-color: lightblue;
 } 
 
-.jumbotron {
+#jumbotron {
   display: none;
-  color: black;
 }
 
 #survey {
@@ -31,7 +30,6 @@ background-color: lightblue;
 }
  
 img {
-  display: none;
   margin: auto;
   width:300px;
 }

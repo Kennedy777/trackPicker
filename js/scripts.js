@@ -8,16 +8,23 @@ $(document).ready(function() {
     var pet = parseInt($("select#pet").val());
     var total = company + interests + cuisine + pet + where;
 
+    console.log(total);
     //business logic//
     if (total <= 7) {
-      $(".jumbotron").show();
-      $(".langCSS").fadeIn();
+      $("#jumbotron").show();
+      $(".langCSS").show();
+      $(".rubyResult").hide();
+      $(".cResult").hide();
       } else if (total > 8 && total <= 12) {
-      $(".jumbotron").show();
-      $(".rubyResult").fadeIn();
+      $("#jumbotron").show();
+      $(".rubyResult").show();
+      $(".cResult").hide();
+      $(".langCSS").hide();
       } else if (total > 13 && total <= 15) {
-      $(".jumbotron").show();
-      $(".cResult").fadeIn();
+      $("#jumbotron").show();
+      $(".cResult").show();
+      $(".langCSS").hide();
+      $(".rubyResult").hide();
      }
    });
 });
