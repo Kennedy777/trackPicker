@@ -6,7 +6,7 @@
 
 ## Description
 
-A simple program to help potential Epicodus students select a programming language based on their interests and goals. 
+A simple program to help potential Epicodus students select a programming language based on their interests and goals.  Independent project for week 2 of Epicodus Intro to Programming. 
 
 ## Setup/Installation Requirements
 

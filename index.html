@@ -4,6 +4,11 @@
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">">
    <link rel="stylesheet" href="css/styles.css" type="text/css">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+
    <title>Programming Track Choser</title>
  </head>
     <body>
@@ -16,120 +21,81 @@
      </div>
      
      <form id="selectionForm">
+      <div class="row">
 
-     <div class="form-group">
-      <label class="control-label"><b>Are you more interested in design and the "user experience" side, or do you prefer back-end programming?</b></label>
-      <div class="radio">
-        <label>
-        <input type="radio" name="focusArea" id="focus" value="front">
-        Front end: user interface and design
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="focusArea" id="focus" value="back">
-          Back-end and server-side programming
-        </label>
-      <div class="radio">
-        <label>
-        <input type="radio" name="focusArea" id="focus" value="mix">
-        I'm interested in both</label>
-        <div>
-      </div><br>
+        <div class="col-md-6">
+          <form id="survey">
+            <h4>Choose the items in the drop-drop menus that most appeal to you to reveal your language track match!</h4><br>
+      
+      
+             <div class="form-group">
+              <label for="fullname">Your Name</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Tell us your name!">
+            </div>
 
-      <div class="form-group">
-        <label class="control-label"><b>Which Epicodus campus do you prefer?</b>
-        </label>
-      <div class="radio">
-        <label>
-        <input type="radio" name="location" id="where" value="seatle">Seattle</label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="location" id="where" value="pdx">Portland</label>
-      </div><br>
-    </div>
+            <label for "bizType">Which of the following work environments do you prefer?</label>
+            <select id="company" class="form-control">
+              <option value="" selected disabled>Please select ...</option>
+              <option value="1">Freelance</option>
+              <option value="2">A busy start-up with a foosball table</option>
+              <option value="3">A stable corporation</option>
+            </select>
+            <br>
 
-      <div class="form-group">
-       <label class="control-label"><b>Which of the following interests you most?</b>
-       </label>
-      <div class="radio">
-        <label>
-        <input id="interest" type="radio" name="interest" value="internal">Making internal software for businesses
-       </label>
-      </div>
-     <div class="radio">
-        <label>
-        <input id="interest" type="radio" name="interest" value="apps"> Developping mobile apps for end users
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input id="interest" type="radio" name="interest" value="android"> Making high-performance Android applications
-        </label>
-      </div>
-      </div>><br>
-      <div class="form-group">
-       <label class="control-label"><b>Of the following, which kind of organization or company would suit you best?</b>
-       </label>
-       <div class="radio">
-         <label>
-         <input id="org" type="radio" name="bizType" value="startUp">A small, nimble start-up that produces a variety of end-user apps.
-        </label>
-       </div>
-       <div class="radio">
-         <label>
-         <input id="org" type="radio" name="bizType" value="govt">A Federal government agency or large NGO with a complex network of websites.
-        </label>
-      </div>
-       </div><br>
-     <div class="form-group">
-      <label class="control-label"><b>Which of the folliowing is most important to you?</b>
-      </label>
-      <div class="radio">
-        <label>
-        <input id="values" type="radio" name="whatIsImpt" value="security">
-        A secure job with a good salary.
-       </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input id="values" type="radio" name="whatIsImpt" value="salary">
-        A secure job with a good salary.
-       </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input id="values" type="radio" name="whatIsImpt" value="casual">
-        Being able to wear jeans to work.
-       </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input id="values" type="radio" name="whatIsImpt" value="foosball">
-        Playing foosball at work.
-       </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input id="values" type="radio" name="whatIsImpt" value="creativity">
-         reating cool apps that people will enjoy
-       </label>
-      </div>
-    </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+          <label for "interests">Which of the following interests you most??</label>
+            <select id="work" class="form-control">
+              <option value="" selected disabled>Please select ...</option>
+              <option value="1">I'm all about the design side</option>
+              <option value="2">Creating fun apps for games</option>
+              <option value="3">Making internal software for businesse</option>
+            </select>
+            <br> 
 
-    <div id="result">
-      <div class="output">
-        <p> Based on your replies, we recommend that you study <strong><span id="langRec"></strong></span>. However, keep in mind that all languages are very similar, and you'll likely use a lot of different languages and frameworks in your development career. Have fun! </p>
+            <label for "pet">Which would be your ideal pet?</label>
+            <select id="city" class="form-control">
+              <option value="" selected disabled>Please select ...</option>
+              <option value="1">Cat</option>
+              <option value="2">Iguana</option>
+              <option value="3">Dog</option>
+            </select>
+            <br>
+
+            <label for "cuisne">What is your favorite kind of cuisine?</label>
+            <select id="food" class="form-control">
+              <option value="" selected disabled>Please select ...</option>
+              <option value="1">Molecular gastronomy</option>
+              <option value="2">Traditional French</option>
+              <option value="3">Burgers & pizza</option>
+            </select>
+            <br>
+
+            <label for "where">Where do you want to take a vacation?</label>
+            <select id="city" class="form-control">
+              <option value="" selected disabled>Please select ...</option>
+              <option value="1">Berlin</option>
+              <option value="2">Japan</option>
+              <option value="3">Seattle</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-info btn-bg">Submit</button>
+            <hr>
+          </form>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="jumbotron">
+              <h2>Based on your replies, we recommend you study:</h2>
+              <p class="langCSS">CSS/Design</p>
+              <img src="img/css.jpg" alt="image of front-end design" class="langCSS">
+              <p class="langRuby">Ruby/Rails</p>
+              <img src="img/ruby.jpg" alt="Ruby on rails image" class="langRuby">
+              <p class="langCsharp">CSharp/.NET</p>
+              <img src="img/csharp.jpg" alt="c sharp logo image" class="langCsharp">
+              <br>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-       <script src="js/scripts.js"></script>
-  </body>
+</div>
+</body>
 </html>
      
