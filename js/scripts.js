@@ -6,18 +6,18 @@ $(document).ready(function() {
     var cuisine = parseInt($("select#cuisine").val());
     var where = parseInt($("select#where").val());
     var pet = parseInt($("select#pet").val());
-    var total = company + interests + cuisine + people + where;
+    var total = company + interests + cuisine + pet + where;
 
     //business logic//
     if (total <= 7) {
       $(".jumbotron").show();
-      $(".langCSS").fadeIn();
+      $(".langCSS").show();
       } else if (total > 8 && total <= 12) {
       $(".jumbotron").show();
-      $(".rubyResult").fadeIn();
+      $(".rubyResult").show();
       } else if (total > 13 && total <= 15) {
       $(".jumbotron").show();
-      $(".cResult").fadeIn();
+      $(".cResult").show();
       }
 
     });

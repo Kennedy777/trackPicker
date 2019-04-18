@@ -1,20 +1,22 @@
-body {
+ body {
   /* margin: 2%;
   padding: 50px;  */
   background-color: lightblue;
-}
+} 
 
 .jumbotron {
   display: none;
+  color: black;
 }
 
 #survey {
   margin: 5%;
 }
-/* .container {
+
+.container {
 margin: 5%;
 background-color: lightblue;
-} */
+} 
 
 .langCSS {
   display: none;
@@ -23,7 +25,7 @@ background-color: lightblue;
 .cResult {
   display: none;
 }
-
+ 
 .rubyResult {
   display: none;
 }
